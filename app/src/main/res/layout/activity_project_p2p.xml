@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tl="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/ivStatusBar"
+        android:layout_width="fill_parent"
+        android:layout_height="15dp"
+        android:background="@color/titlebar_color"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/rlTitleBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/titlebar_height"
+        android:background="@color/titlebar_color">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/titlebar_line" />
+
+        <com.flyco.tablayout.SlidingTabLayout
+            android:id="@+id/tabs"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/titlebar_height"
+            android:layout_centerInParent="true"
+            android:background="@android:color/transparent"
+            tl:tl_divider_padding="13dp"
+            tl:tl_indicator_color="@color/titlebar_text_color"
+            tl:tl_indicator_height="2dp"
+            tl:tl_indicator_width_equal_title="true"
+            tl:tl_tab_padding="10dp"
+            tl:tl_tab_space_equal="false"
+            tl:tl_textSelectColor="@color/titlebar_text_color"
+            tl:tl_textUnselectColor="#66000000"
+            tl:tl_underline_color="#1A000000"
+            tl:tl_underline_height="0dp" />
+        <!--<android.support.design.widget.TabLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/titlebar_height"
+            app:tabGravity="center"
+            app:tabIndicatorColor="@color/titlebar_text_color"
+            app:tabMode="fixed"
+            app:tabPaddingStart="2dp"
+            app:tabContentStart="10dp"
+            app:tabPaddingEnd="2dp"
+            app:tabSelectedTextColor="@color/titlebar_text_color"
+            app:tabTextColor="@color/titlebar_text_color">
+
+        </android.support.design.widget.TabLayout>-->
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="图文详情"
+            android:textColor="@color/titlebar_text_color"
+            android:textSize="@dimen/titleba_title_fontsize"
+            android:visibility="gone" />
+
+        <ImageButton
+            android:id="@+id/ibBack"
+            android:layout_width="@dimen/titlebar_height"
+            android:layout_height="@dimen/titlebar_height"
+            android:background="@android:color/transparent"
+            android:scaleType="centerInside"
+            android:src="@drawable/img_fh" />
+
+        <ImageButton
+            android:id="@+id/ibShare"
+            android:layout_width="@dimen/titlebar_height"
+            android:layout_height="@dimen/titlebar_height"
+            android:visibility="gone"
+            android:layout_alignParentRight="true"
+            android:background="@android:color/transparent"
+            android:scaleType="centerInside"
+            android:src="@drawable/img_fx" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <com.nongjinsuo.mimijinfu.widget.CustomViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></com.nongjinsuo.mimijinfu.widget.CustomViewPager>
+
+        <LinearLayout
+            android:id="@+id/llBottomView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"></LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/llBottomView"
+            android:background="@drawable/img_tt" />
+
+        <include
+            layout="@layout/include_service_fail"
+            android:visibility="gone" />
+
+        <include
+            layout="@layout/include_nodata"
+            android:visibility="gone" />
+        <com.pnikosis.materialishprogress.ProgressWheel android:id="@+id/ProgressWheel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+
+            android:layout_centerVertical="true"
+            wheel:matProg_circleRadius="25dp"
+            wheel:matProg_barWidth="3dp"
+            android:background="@color/background_color"
+            wheel:matProg_barColor="#fa4242"
+            wheel:matProg_progressIndeterminate="true"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:wheel="http://schemas.android.com/apk/res-auto" />
+    </RelativeLayout>
+
+
+</LinearLayout>

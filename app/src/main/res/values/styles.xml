@@ -1,0 +1,254 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="@style/BaseAppTheme">
+        <!-- Customize your theme here. -->
+
+    </style>
+
+    <style name="BaseAppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@android:color/white</item>
+        <item name="colorPrimaryDark">@android:color/black</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textSize">@dimen/activity_word_text_14</item>
+        <item name="android:textColor">@color/titlebar_text_color</item>
+    </style>
+
+    <style name="layout_fill">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+    </style>
+
+    <style name="layout_wrap_content">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="layout_fill_wrap">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="layout_wrap_fill">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">fill_parent</item>
+    </style>
+
+    <style name="Dialog" parent="android:style/Theme.Dialog">
+        <item name="android:background">#00000000</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+
+    <style name="rb_style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:button">@null</item>
+        <item name="android:background">@null</item>
+        <item name="android:drawablePadding">2dp</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/rb_textcolor_selector</item>
+        <item name="android:paddingTop">6dp</item>
+        <item name="android:paddingBottom">6dp</item>
+    </style>
+
+
+    <!-- Dialog样式 -->
+    <style name="super_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <!-- 边框 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 无标题 -->
+    </style>
+
+    <style name="buy_dialog" parent="super_dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="custom_dialog" parent="super_dialog">
+        <item name="android:windowAnimationStyle">@style/dialog_animation</item>
+        <item name="android:windowBackground">@android:color/white</item>
+    </style>
+
+    <style name="dialog_animation" parent="@android:style/Animation.Dialog">
+        <item name="android:windowEnterAnimation">@anim/push_bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/push_bottom_out</item>
+    </style>
+
+    <style name="Widget.SeekBar.Normal" parent="@android:style/Widget.SeekBar">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:indeterminateDrawable">
+            @android:drawable/progress_indeterminate_horizontal
+        </item>
+        <item name="android:progressDrawable">@drawable/seekbar_horizontal</item>
+        <item name="android:thumb">@drawable/img_anniu</item>
+        <item name="android:thumbOffset">14.0dip</item>
+        <item name="android:maxHeight">1.5dp</item>
+        <item name="android:minHeight">1.5dp</item>
+    </style>
+
+
+    <style name="progress_dialog" parent="@android:style/Theme.Dialog">
+
+        <item name="android:windowFrame">@null</item>
+
+        <item name="android:windowIsFloating">true</item>
+
+        <item name="android:windowIsTranslucent">true</item>
+
+        <item name="android:windowNoTitle">true</item>
+
+        <item name="android:background">@android:color/transparent</item>
+
+        <item name="android:windowBackground">@android:color/transparent</item>
+
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="TabLayoutTextStyle">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="style_zc">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingRight">12dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@android:color/white</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="login_left_text">
+        <item name="android:layout_width">80dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">left</item>
+        <item name="android:paddingBottom">15dp</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:paddingTop">15dp</item>
+        <item name="android:textColor">@color/color_homepage_quanbu</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="style_edit_pwd">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginRight">20dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@null</item>
+        <item name="android:maxLength">20</item>
+      <!--  <item name="android:digits">0123456789abcdefghigklmnopqrstuvwxyzQWERTYUIOPASDFGHJKLZXCVBNM
+        </item>-->
+        <item name="android:inputType">textPassword</item>
+        <item name="android:textColorHint">@color/color_login_et_hint</item>
+        <item name="android:textColor">@color/color_homepage_quanbu</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="style_home_page_lable">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:textSize">11sp</item>
+    </style>
+    <style name="style_big_text_red">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/color_login_btn</item>
+    </style>
+    <style name="style_big_text_black">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/color_homepage_quanbu</item>
+    </style>
+    <style name="style_smile_text_red">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textScaleX">1.0</item>
+        <item name="android:textColor">@color/color_login_btn</item>
+    </style>
+    <style name="style_smile_text_black">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textScaleX">1.0</item>
+        <item name="android:textColor">@color/color_homepage_quanbu</item>
+    </style>
+
+    <style name="style_detail_banner_num1">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="style_detail_banner_num2">
+        <item name="android:textSize">9sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="style_login_btn">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">50dp</item>
+        <item name="android:layout_marginRight">50dp</item>
+        <item name="android:background">@drawable/shape_login_btn</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">7dp</item>
+        <item name="android:textColor">@color/color_me_name</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="style_setting_line" >
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:layout_marginLeft">16dp</item>
+        <item name="android:background">@color/color_class_room_pl_vertical_line</item>
+    </style>
+    <style name="SwitchButtonStyle">
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:paddingRight">5dp</item>
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:paddingBottom">4dp</item>
+    </style>
+
+    <style name="style_progressBar" parent="Base.Widget.AppCompat.ProgressBar.Horizontal"><!--style="?android:attr/progressBarStyleHorizontal"-->
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">3dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:max">100</item>
+        <item name="android:progress">0</item>
+        <item name="android:progressDrawable">@drawable/item_project_progressbar_color</item>
+        <item name="android:secondaryProgress">0</item>
+    </style>
+    <style name="style_p2p_progressBar" parent="Base.Widget.AppCompat.ProgressBar.Horizontal"><!--style="?android:attr/progressBarStyleHorizontal"-->
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">3dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:max">100</item>
+        <item name="android:progress">0</item>
+        <item name="android:progressDrawable">@drawable/item_p2p_progressbar_color</item>
+        <item name="android:secondaryProgress">0</item>
+    </style>
+    <style name="style_jd_big_text_white">
+        <item name="android:textSize">25sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="style_jd_smile_text_white">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="style_jd_big_text_blick">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/color_212121</item>
+    </style>
+    <style name="style_jd_smile_text_blick">
+        <item name="android:textSize">9sp</item>
+        <item name="android:textColor">@color/color_212121</item>
+    </style>
+    <style name="popwin_anim_style">
+        <item name="android:windowEnterAnimation">@anim/popupwindow_open</item>
+        <item name="android:windowExitAnimation">@anim/popupwindow_close</item>
+    </style>
+</resources>

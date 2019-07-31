@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/img_gmcg" />
+    <TextView
+        android:id="@+id/tvMoney"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0元"
+        android:textSize="18sp"
+        android:textColor="@color/color_homepage_quanbu"
+        android:layout_marginTop="20dp"/>
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="match_parent"
+        android:layout_marginTop="42dp"
+        android:gravity="center"
+        android:text="您已成功认购\n211期奥迪A6L 3.0商务型轿车"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tvFhxmxq"
+        android:text="返回项目详情"
+        android:layout_marginTop="80dp"
+        style="@style/style_login_btn"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="70dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="70dp"
+        android:layout_marginRight="70dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/shape_ckwdzc_btn"
+        android:gravity="center"
+        android:visibility="gone"
+        android:padding="10dp"
+        android:text="查看我的募集"
+        android:textColor="@color/color_login_btn"
+        android:textSize="18sp" />
+</LinearLayout>

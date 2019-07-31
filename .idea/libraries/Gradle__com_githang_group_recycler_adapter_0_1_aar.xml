@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.githang:group-recycler-adapter:0.1@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e53dd0d60604b14417970e5f6258660f/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e53dd0d60604b14417970e5f6258660f/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.githang/group-recycler-adapter/0.1/f0c9e191308fd93b1a29d897221c1d13f1722b6b/group-recycler-adapter-0.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

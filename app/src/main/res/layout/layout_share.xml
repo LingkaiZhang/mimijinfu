@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+    <TextView
+        android:id="@+id/tvfenxiang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="分享到"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="30dp"
+        android:textColor="@color/color_share_dialog_textcolor"/>
+    <LinearLayout
+        android:id="@+id/linear"
+        style="@style/layout_fill"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:id="@+id/tvWechat"
+            style="@style/layout_wrap_content"
+            android:src="@drawable/img_weixn"
+            android:layout_weight="1"
+            android:textColor="@color/titlebar_text_color" />
+
+        <ImageView
+            android:id="@+id/tvTencentqq"
+            style="@style/layout_wrap_content"
+            android:src="@drawable/ing_qq"
+            android:layout_weight="1"
+
+            android:textColor="@color/titlebar_text_color" />
+
+
+         <ImageView
+             android:id="@+id/tvWechatMoments"
+            style="@style/layout_wrap_content"
+            android:layout_weight="1"
+             android:src="@drawable/img_pengyouquan"
+            android:textColor="@color/titlebar_text_color" />
+         <ImageView
+            android:id="@+id/tvQzone"
+            style="@style/layout_wrap_content"
+            android:layout_weight="1"
+             android:src="@drawable/img_kongjian"
+            android:textColor="@color/titlebar_text_color" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/ivCancel"
+        style="@style/layout_wrap_content"
+        android:padding="20dp"
+        android:gravity="center"
+        android:src="@drawable/img_quxiao"
+       />
+    </RelativeLayout>
+</RelativeLayout>

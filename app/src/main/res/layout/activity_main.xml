@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@android:id/tabhost"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.nongjinsuo.mimijinfu.activity.MainActivity">
+
+    <FrameLayout
+        android:id="@+id/realtabcontent"
+        android:layout_width="fill_parent"
+        android:layout_above="@+id/rgBottomView"
+        android:layout_marginBottom="-5dp"
+        android:layout_height="match_parent"
+       />
+
+
+    <RadioGroup
+        android:id="@+id/rgBottomView"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content"
+        android:background="@drawable/img_foot"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rbHomePage"
+            style="@style/rb_style"
+            android:checked="true"
+            android:drawableTop="@drawable/rb_homepage_selector"
+            android:text="@string/str_shouye"
+             />
+
+        <RadioButton
+            android:id="@+id/rbProject"
+            style="@style/rb_style"
+            android:drawableTop="@drawable/rb_project_selector"
+            android:text="@string/str_project" />
+        <RadioButton
+            android:id="@+id/rbFind"
+            style="@style/rb_style"
+            android:drawableTop="@drawable/rb_my_selector"
+            android:text="@string/str_find" />
+        <RadioButton
+            android:id="@+id/rbProperty"
+            style="@style/rb_style"
+            android:drawableTop="@drawable/rb_property_selector"
+            android:text="@string/str_zichan" />
+
+    </RadioGroup>
+</RelativeLayout>

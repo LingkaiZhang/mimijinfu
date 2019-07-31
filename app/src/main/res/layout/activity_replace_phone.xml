@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/login_left_text"
+            android:text="新手机号" />
+
+        <com.nongjinsuo.mimijinfu.widget.MyEditText
+            android:id="@+id/view2_etPhone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="请输入新手机号"
+            android:inputType="number"
+            android:maxLength="11"
+            android:singleLine="true"
+            android:textColor="@color/color_homepage_quanbu"
+            android:textColorHint="@color/color_login_et_hint"
+            android:textSize="14sp" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="12dp"
+                android:layout_marginTop="12dp"
+                android:layout_weight="0"
+                android:background="@color/color_class_room_pl_vertical_line" />
+
+            <RelativeLayout
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp">
+
+                <TextView
+                    android:id="@+id/tvHqCode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:maxLength="6"
+                    android:text="获取验证码"
+                    android:textColor="@color/color_login_btn"
+                    android:textSize="14sp" />
+
+                <com.pnikosis.materialishprogress.ProgressWheel xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:wheel="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/progressSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone"
+                    wheel:matProg_barColor="#fa4242"
+                    wheel:matProg_barWidth="2dp"
+                    wheel:matProg_circleRadius="10dp"
+                    wheel:matProg_progressIndeterminate="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="16dp"
+        android:background="@color/color_class_room_pl_vertical_line" />
+
+    <LinearLayout
+        android:id="@+id/llCodeView"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/login_left_text"
+            android:text="验证码" />
+
+        <com.nongjinsuo.mimijinfu.widget.MyEditText
+            android:id="@+id/view2_etCode"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="请输入验证码"
+            android:singleLine="true"
+            android:inputType="number"
+            android:maxLength="6"
+            android:textColor="@color/color_homepage_quanbu"
+            android:textColorHint="@color/color_login_et_hint"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvWcxg"
+        android:text="完成修改"
+        android:layout_marginTop="100dp"
+        style="@style/style_login_btn"/>
+</LinearLayout>

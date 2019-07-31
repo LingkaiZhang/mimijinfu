@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: cn.fanrunqi:waveprogress-1.0.1">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/waveprogress-1.0.1.aar/3278aeeb6fb7e0dadc45cc4d381514b5/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/waveprogress-1.0.1.aar/3278aeeb6fb7e0dadc45cc4d381514b5/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/cn.fanrunqi/waveprogress/1.0.1/676fc9358be5c17f4d65887af26e96aa30a6abd6/waveprogress-1.0.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

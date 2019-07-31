@@ -1,0 +1,208 @@
+apply plugin: 'com.android.application'
+
+android {
+
+    signingConfigs {
+        release {
+            keyAlias 'caiyan'
+            keyPassword '20160301'
+            storeFile file('C:\\AndroidCode\\mimijinfu\\androids.keystore')
+            storePassword '20160301'
+        }
+
+        debug {
+            keyAlias 'caiyan'
+            keyPassword '20160301'
+            storeFile file('C:\\AndroidCode\\mimijinfu\\androids.keystore')
+            storePassword '20160301'
+        }
+    }
+    compileSdkVersion ANDROID_BUILD_SDK_VERSION as int
+//    buildToolsVersion ANDROID_BUILD_TOOLS_VERSION
+    defaultConfig {
+        applicationId "com.nongjinsuo.mimijinfu"
+        minSdkVersion ANDROID_BUILD_MIN_SDK_VERSION as int
+        targetSdkVersion ANDROID_BUILD_TARGET_SDK_VERSION as int
+        versionCode VERSION_CODE as int
+        versionName VERSION_NAME
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        resConfigs "zh"
+        ndk {
+            //选择要添加的对应cpu类型的.so库。
+            abiFilters 'armeabi', 'armeabi-v7a', 'x86'
+            // 还可以添加 'x86', 'x86_64', 'mips', 'mips64'
+        }
+        manifestPlaceholders = [
+                JPUSH_PKGNAME: "com.nongjinsuo.mimijinfu",
+                JPUSH_APPKEY : "ee190ad8adff89623fdec7c5", //JPush上注册的包名对应的appkey.
+                JPUSH_CHANNEL: "developer-default", //暂时填写默认值即可.
+        ]
+
+    }
+    buildTypes {
+//        release {
+//            minifyEnabled false
+//            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+//        }
+//        debug {
+//            signingConfig signingConfigs.release
+//        }
+
+        debug {
+            // 如果没有提供混淆规则文件，则设置默认的混淆规则文件（SDK/tools/proguard/proguard-android.txt）
+            pseudoLocalesEnabled true
+            // 显示Log
+            buildConfigField "boolean", "LOG_DEBUG", "true"
+            //混淆
+            minifyEnabled false
+            //Zipalign优化
+            zipAlignEnabled true
+            // 移除无用的resource文件
+            shrinkResources false
+            //加载默认混淆配置文件
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            //签名
+            signingConfig signingConfigs.debug
+        }
+        release {
+            // 如果没有提供混淆规则文件，则设置默认的混淆规则文件（SDK/tools/proguard/proguard-android.txt）
+            pseudoLocalesEnabled true
+            // 不显示Log
+            buildConfigField "boolean", "LOG_DEBUG", "true"
+            //混淆
+            minifyEnabled true
+            //Zipalign优化
+            zipAlignEnabled true
+            // 移除无用的resource文件
+            shrinkResources true
+            //加载默认混淆配置文件
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            //签名
+            signingConfig signingConfigs.release
+        }
+    }
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+    productFlavors {
+    }
+}
+repositories {
+    mavenCentral()
+    maven { url "https://oss.sonatype.org/content/repositories/snapshots" }
+}
+/**
+ * 注解
+ */
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+//        classpath 'com.neenbedankt.gradle.plugins:android-apt:1.8'
+    }
+}
+//apply plugin: 'com.neenbedankt.android-apt'
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    /**
+     *         百度定位
+     */
+    implementation files('libs/BaiduLBS_Android.jar')
+    /**
+     *         volly框架
+     */
+    //    compile files('libs/library-1.0.19.jar')
+    //    compile files('libs/httpclient-4.2.5.jar')
+    //    compile files('libs/httpcore-4.2.4.jar')
+    /**
+     *         下载图片框架Glide
+     */
+    implementation 'com.github.bumptech.glide:glide:3.7.0'
+    /**
+     *         轮播
+     */
+    implementation 'com.youth.banner:banner:1.4.9'
+    /**
+     *         Android V4包
+     */
+    //noinspection GradleCompatible
+    implementation 'com.android.support:support-v4:26.1.0'
+    /**
+     *         圆角ImageView控件
+     */
+    implementation 'com.makeramen:roundedimageview:2.3.0'
+    implementation 'com.android.support:design:25.0.0'
+    implementation 'com.pnikosis:materialish-progress:1.7'
+    /**
+     *         Gif加载ImageView
+     */
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.2'
+    /**
+     *         省市区联动
+     */
+    implementation 'com.bigkoo:pickerview:2.0.8'
+    /**
+     *         友盟统计
+     */
+    implementation 'com.umeng.analytics:analytics:latest.integration'
+    /**
+     *         注解
+     */
+    implementation 'com.jakewharton:butterknife:8.8.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+    /**
+     *         https://github.com/fanrunqi/WaveProgressView
+     *         水波纹进度
+     */
+    implementation 'cn.fanrunqi:waveprogress:1.0.1'
+    /**
+     *      gson解析
+     */
+    implementation 'com.google.code.gson:gson:2.6.2'
+    implementation 'com.google.android.gms:play-services-appindexing:8.4.0'
+    /**
+     *      FlycoTabLayout
+     */
+    implementation 'com.flyco.tablayout:FlycoTabLayout_Lib:2.1.0@aar'
+    /**
+     *      下拉刷新
+     */
+    /*    implementation 'com.android.support:recyclerview-v7:24.0.0'
+                                            implementation 'com.android.support:appcompat-v7:24.0.0'
+                                            implementation 'cn.bingoogolapple:bga-refreshlayout:1.1.7@aar'*/
+    implementation project(path: ':library')
+    implementation project(path: ':calendarview')
+    implementation files('libs/eventbus-2.4.0.jar')
+    /**
+     *     针对Android6.0权限管理开启的库
+     */
+    implementation 'com.github.k0shk0sh:PermissionHelper:1.1.0'
+    /**
+     *    读取PDF  PDFView  https://github.com/JoanZapata/android-pdfview
+     */
+    implementation 'com.github.barteksc:android-pdf-viewer:2.7.0-beta'
+    /**
+     *    SwitchButton  https://github.com/kyleduo/SwitchButton
+     */
+    implementation 'com.kyleduo.switchbutton:library:1.4.5'
+    implementation 'cn.jiguang.sdk:jpush:3.0.6'
+    // 此处以JPush 3.0.5 版本为例。
+    implementation 'cn.jiguang.sdk:jcore:1.1.3'
+    // 此处以JCore 1.1.2 版本为例。
+//    implementation 'com.squareup.okhttp3:okhttp:3.8.1'
+
+    implementation 'com.mcxiaoke.volley:library:1.0.19'
+    implementation 'com.githang:group-recycler-adapter:0.1'
+
+    implementation files('libs/MobCommons-2017.0412.1554.jar')
+    implementation files('libs/MobTools-2017.0412.1554.jar')
+    implementation files('libs/ShareSDK-Core-2.8.3.jar')
+    implementation files('libs/ShareSDK-QQ-2.8.3.jar')
+    implementation files('libs/ShareSDK-QZone-2.8.3.jar')
+    implementation files('libs/ShareSDK-Wechat-2.8.3.jar')
+    implementation files('libs/ShareSDK-Wechat-Core-2.8.3.jar')
+    implementation files('libs/ShareSDK-Wechat-Moments-2.8.3.jar')
+}

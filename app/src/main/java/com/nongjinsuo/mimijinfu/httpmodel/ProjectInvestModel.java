@@ -1,0 +1,15 @@
+package com.nongjinsuo.mimijinfu.httpmodel;
+
+import com.nongjinsuo.mimijinfu.beans.BaseVo;
+import com.nongjinsuo.mimijinfu.beans.ProjectInvestVo;
+
+import java.util.List;
+
+/**
+ * @author czz
+ * @Description: (用一句话描述)
+ */
+public class ProjectInvestModel extends BaseVo{
+    public List<ProjectInvestVo> result;
+
+}

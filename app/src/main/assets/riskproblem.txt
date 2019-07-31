@@ -1,0 +1,281 @@
+{
+    "code": "200",
+    "text": "成功",
+    "result": [
+        {
+            "problemName": "1.（投资目的）您目前的人生阶段：",
+            "problemAnswer": [
+                {
+                    "answerName": "退休期（已退休）",
+                    "grade": 1
+                },
+                {
+                    "answerName": "分退休前期（未退休，子女已参加工作）",
+                    "grade": 2
+                },
+                {
+                    "answerName": "分家庭成长期（子女出生到完成大学教育）",
+                    "grade": 3
+                },
+                {
+                    "answerName": "分家庭形成期（结婚到子女出生前）",
+                    "grade": 4
+                },
+                {
+                    "answerName": "分单身期: （独身，无子女）",
+                    "grade": 5
+                }
+            ]
+        },
+        {
+            "problemName": "2.（投资目的）您需要供养的家庭成员数：",
+            "problemAnswer": [
+                {
+                    "answerName": "4人或多于4人",
+                    "grade": 1
+                },
+                {
+                    "answerName": "3",
+                    "grade": 2
+                },
+                {
+                    "answerName": "2",
+                    "grade": 3
+                },
+                {
+                    "answerName": "1",
+                    "grade": 4
+                },
+                {
+                    "answerName": "0",
+                    "grade": 5
+                }
+            ]
+        },
+        {
+            "problemName": "3.（投资目的）您此次投资的目标是什么？",
+            "problemAnswer": [
+                {
+                    "answerName": "保险计划或将资产妥善地传承给下一代",
+                    "grade": 1
+                },
+                {
+                    "answerName": "子女教育或保证养老",
+                    "grade": 2
+                },
+                {
+                    "answerName": "购置符合自己身份的房、车",
+                    "grade": 3
+                },
+                {
+                    "answerName": "维持高品质的生活",
+                    "grade": 4
+                },
+                {
+                    "answerName": "创造更多的财富",
+                    "grade": 5
+                }
+            ]
+        },
+        {
+            "problemName": "4.（投资期限）针对此次可供投资的资金，您的投资期限是多久？",
+            "problemAnswer": [
+                {
+                    "answerName": "一年及一年以内",
+                    "grade": 1
+                },
+                {
+                    "answerName": "一年以上三年以内",
+                    "grade": 2
+                },
+                {
+                    "answerName": "三年以上五年以内",
+                    "grade": 3
+                },
+                {
+                    "answerName": "五年以上十年以内",
+                    "grade": 4
+                },
+                {
+                    "answerName": "十年以上",
+                    "grade": 5
+                }
+            ]
+        },
+        {
+            "problemName": "5.（投资如果进行基金定投，您能坚持投资的最长期限是多长？",
+            "problemAnswer": [
+                {
+                    "answerName": "一年及一年以内",
+                    "grade": 1
+                },
+                {
+                    "answerName": "一年以上三年以内",
+                    "grade": 2
+                },
+                {
+                    "answerName": "三年以上五年以内",
+                    "grade": 3
+                },
+                {
+                    "answerName": "五年以上十年以内",
+                    "grade": 4
+                },
+                {
+                    "answerName": "十年以上",
+                    "grade": 5
+                }
+            ]
+        },
+        {
+            "problemName": "6.（投资经验）您的家庭资产配置在过去的一年最大的波动幅度是：",
+            "problemAnswer": [
+                {
+                    "answerName": "5%以内",
+                    "grade": 1
+                },
+                {
+                    "answerName": "5-10%",
+                    "grade": 2
+                },
+                {
+                    "answerName": "10-30%",
+                    "grade": 3
+                },
+                {
+                    "answerName": "30-50%",
+                    "grade": 4
+                },
+                {
+                    "answerName": "50%以上",
+                    "grade": 5
+                }
+            ]
+        },
+        {
+            "problemName": "7.（投资经验）您对投资价值波动的感觉是：",
+            "problemAnswer": [
+                {
+                    "answerName": "对任何波动都感到难以承受",
+                    "grade": 1
+                },
+                {
+                    "answerName": "能够接受轻微波动，关心资产保值多于增值",
+                    "grade": 2
+                },
+                {
+                    "answerName": "能够理解并接受“高收益就意味着要承受投资波动”",
+                    "grade": 3
+                },
+                {
+                    "answerName": "尽管会担心投资价值的剧烈波动，但能够接受投资亏损",
+                    "grade": 4
+                },
+                {
+                    "answerName": "潜意识中追求高增长，同时能够坦然接受投资亏损",
+                    "grade": 5
+                }
+            ]
+        },
+        {
+            "problemName": "8.（财务状况）您的投资中哪一品种所占的比重最大?",
+            "problemAnswer": [
+                {
+                    "answerName": "银行存款",
+                    "grade": 1
+                },
+                {
+                    "answerName": "保险",
+                    "grade": 2
+                },
+                {
+                    "answerName": "房产",
+                    "grade": 3
+                },
+                {
+                    "answerName": "债券",
+                    "grade": 4
+                },
+                {
+                    "answerName": "股票／基金",
+                    "grade": 5
+                }
+            ]
+        },
+        {
+            "problemName": "9.（财务状况）您平均每月的生活消费支出约占固定收入的：",
+            "problemAnswer": [
+                {
+                    "answerName": "100%以上",
+                    "grade": 1
+                },
+                {
+                    "answerName": "71%-100%",
+                    "grade": 2
+                },
+                {
+                    "answerName": "51%-70%",
+                    "grade": 3
+                },
+                {
+                    "answerName": "31%-50%",
+                    "grade": 4
+                },
+                {
+                    "answerName": "0-30%",
+                    "grade": 5
+                }
+            ]
+        },
+        {
+            "problemName": "10.（短期风险承受能力）假设你在投资了一只股票100000元, 但一个星期中亏了15%，你看不出是什么原因, 大盘也没有跌这么多, 你会怎么办?",
+            "problemAnswer": [
+                {
+                    "answerName": "清仓, 然后投入到一个波动小的基金中",
+                    "grade": 1
+                },
+                {
+                    "answerName": "卖掉一半",
+                    "grade": 4
+                },
+                {
+                    "answerName": "等着价格反弹再卖掉",
+                    "grade": 6
+                },
+                {
+                    "answerName": "什么都不做(觉得这是正常的)",
+                    "grade": 8
+                },
+                {
+                    "answerName": "补仓",
+                    "grade": 10
+                }
+            ]
+        },
+        {
+            "problemName": "11.（长期风险承受能力）一般说来。投资的期望收益越高，风险也越高，假设您手上有20万元可进行投资，您期望五年后会出现什么样的情况？",
+            "problemAnswer": [
+                {
+                    "answerName": "平均投资年收益率为4.14%，最好的情况是6%，最坏的情况为0.98%",
+                    "grade": 1
+                },
+                {
+                    "answerName": "平均投资年收益率为6.97%，最好的情况是15%，最坏的情况是-3%",
+                    "grade": 2
+                },
+                {
+                    "answerName": "平均投资年收益率为9.98%，最好的情况是25%，最坏的情况是-12.1%",
+                    "grade": 3
+                },
+                {
+                    "answerName": "平均投资年收益率为12.29%，最好情况是33.6%，最坏情况是-20%",
+                    "grade": 4
+                },
+                {
+                    "answerName": "平均投资年收益率为15.89%，最好情况是50%，最坏情况是-33.5%",
+                    "grade": 5
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:text="姓名"
+            style="@style/login_left_text" />
+
+        <com.nongjinsuo.mimijinfu.widget.MyEditText
+            android:id="@+id/view1_etName"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="16dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="请输入姓名"
+            android:maxLength="11"
+            android:singleLine="true"
+            android:textColorHint="@color/color_login_et_hint"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="16dp"
+        android:background="@color/color_class_room_pl_vertical_line" />
+
+    <LinearLayout
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:text="身份证"
+            style="@style/login_left_text" />
+
+        <com.nongjinsuo.mimijinfu.widget.MyEditText
+            android:id="@+id/view1_etIDcard"
+            android:layout_width="match_parent"
+            android:singleLine="true"
+            android:layout_height="match_parent"
+            android:layout_marginRight="16dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="请输入身份证号"
+            android:digits="1234567890xX"
+            android:inputType=""
+            android:textColorHint="@color/color_login_et_hint"
+            android:textSize="14sp" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        style="@style/style_zc"
+        android:layout_height="40dp"
+        >
+        <TextView
+            android:id="@+id/tvCarName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:text="211期 别克-昂科雷 2.0L"
+            android:textColor="@color/color_zc_lookall"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="4dp"
+            android:gravity="right"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tvJine"
+                android:textSize="11sp"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/color_zc_lookall"
+                android:text="0"/>
+            <!-- android:textColor="@color/color_homepage_quanbu"-->
+            <TextView
+                android:id="@+id/tvStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="投票中"
+                android:textSize="10sp"
+                android:textColor="@color/rb_tc_true"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/viewLine"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="12dp"
+        android:background="@color/color_hot_sale_line"/>
+</LinearLayout>

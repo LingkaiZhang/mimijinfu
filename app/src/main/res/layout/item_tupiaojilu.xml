@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_height="fill_parent">
+
+            <ImageView
+                android:id="@+id/ivStatus3"
+                android:layout_width="wrap_content"
+                android:visibility="invisible"
+                android:layout_height="wrap_content"
+                android:src="@drawable/img_zrr" />
+            <com.nongjinsuo.mimijinfu.widget.DividerView
+                android:layout_width="1dp"
+                android:layout_centerHorizontal="true"
+                android:layout_height="fill_parent"
+                custom:linecolor="@color/color_project_detail_jindu_xu_line"
+                custom:orientation="vertical"
+                custom:dashLength="1dp"
+                custom:dashGap="2dp"
+                custom:dashThickness="1dp" />
+        </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:paddingBottom="10dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="8dp"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:src="@drawable/img_zjj"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="13sp"
+                    android:layout_height="wrap_content"
+                    android:text="买方出价120.00万元，赞成票数30%"
+                    android:id="@+id/tvTptext" />
+
+                <TextView
+                    android:id="@+id/tvQtp"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="9dp"
+                    android:layout_marginRight="8dp"
+                    android:textSize="10sp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="2dp"
+                    android:paddingBottom="2dp"
+                    android:textColor="@color/color_hot_sale_red"
+                    android:background="@drawable/shape_project_details_xianshi_bg"
+                    android:layout_height="wrap_content"
+                    android:text="去投票"/>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/tvTpTime"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:textSize="12sp"
+                android:layout_marginTop="4dp"
+                android:layout_height="wrap_content"
+                android:text="2016-11-17 11:58:45"/>
+
+            <TextView
+                android:id="@+id/tvTpXzmj"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:textSize="10sp"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/color_project_detail_jindu_hui"
+                android:layout_height="wrap_content"
+                android:text="寻找买家中..."/>
+        </LinearLayout>
+    </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

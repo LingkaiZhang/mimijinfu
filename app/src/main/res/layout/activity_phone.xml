@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_marginTop="6dp"
+        android:background="@color/white"
+        style="@style/style_zc">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="手机号"
+            android:textColor="@color/color_homepage_quanbu"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tvPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:gravity="center_vertical"
+            android:textColor="@color/color_homepage_quanbu"
+            android:textSize="14sp"
+            tools:text="18500395995" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvGgsjh"
+        android:text="更改手机号"
+        android:layout_marginTop="100dp"
+        style="@style/style_login_btn" />
+</LinearLayout>

@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="16dp"
+            android:text="项目介绍"
+            android:textColor="@color/color_homepage_quanbu"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/color_homepage_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="17dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="18dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="项目名称"
+                    android:textColor="@color/color_project_detail_baozhang"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tvXmmc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_homepage_quanbu"
+                    android:textSize="12sp"
+                    tools:text="奥迪-A5 2016款 3.0L 自动档运动型轿车" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="项目总额"
+                    android:textColor="@color/color_project_detail_baozhang"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tvZcje"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_homepage_quanbu"
+                    android:textSize="12sp"
+                    tools:text="120.00万元" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="最低年化"
+                    android:textColor="@color/color_project_detail_baozhang"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tvZdhgj"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_homepage_quanbu"
+                    android:textSize="12sp"
+                    tools:text="100.00万元" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="项目期限"
+                    android:textColor="@color/color_project_detail_baozhang"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tvYjxssj"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_homepage_quanbu"
+                    android:textSize="12sp"
+                    tools:text="60天" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="期待年回报"
+                    android:textColor="@color/color_project_detail_baozhang"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tvZcsj"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_homepage_quanbu"
+                    android:textSize="12sp"
+                    tools:text="3天" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="起投金额"
+                    android:textColor="@color/color_project_detail_baozhang"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tvRgdfje"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_homepage_quanbu"
+                    android:textSize="12sp"
+                    tools:text="1000元" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="募集周期"
+                    android:textColor="@color/color_project_detail_baozhang"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tvMjzq"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/color_homepage_quanbu"
+                    android:textSize="12sp"
+                    tools:text="5天" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

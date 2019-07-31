@@ -1,0 +1,77 @@
+<resources>
+    <string name="app_name">米米金服</string>
+    <string name="str_shouye">首页</string>
+    <string name="str_project">项目</string>
+    <string name="str_find">发现</string>
+    <string name="str_zichan">资产</string>
+    <string name="str_tmb">信息披露</string>
+    <string name="str_xszy">新手指引</string>
+    <string name="str_phb">品牌介绍</string>
+    <string name="str_kt">推荐奖励</string>
+    <string name="str_xlb">销量榜</string>
+    <string name="str_syb">收益榜</string>
+    <string name="str_jygysy">近一个月收益</string>
+    <string name="str_lsxl">历史销量TOP10</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_main2">Main2Activity</string>
+
+    <string name="share_to_wechatmoment">分享到微信朋友圈</string>
+    <string name="share_to_sina">分享到新浪微博</string>
+    <string name="share_to_tencent">分享到腾讯微博</string>
+    <string name="str_zhuhai">投资有风险    入市需谨慎</string>
+    <string name="str_bym">本页面非任何法律文件，投资前请认真阅读基金合同、招募说明书及其更新。基金过往业绩不预示其未来表现，市场有风险，投资需谨慎。</string>
+    <string name="str_about_bottom">＠2016 AIMI.All rights reserved.</string>
+
+    <string name="str_fwxy">我已知晓产品风险、交易规则并确认根据 《约定交易业务规则》执行交易。</string>
+
+
+    <!-- 设置  ->手势密码 -->
+    <string name="setting_gesture_pwd_forget">忘记手势密码</string>
+    <string name="setting_gesture_pwd_title">手势密码锁定</string>
+    <string name="setting_gesture_pwd_create">创建手势密码</string>
+    <string name="setting_gesture_pwd_validate_title">验证手势密码</string>
+    <string name="setting_gesture_pwd_validate_cancle_title">关闭手势密码</string>
+    <string name="setting_gesture_pwd_validate_update_title">修改手势密码</string>
+    <string name="setting_gesture_pwd_drawing">绘制解锁密码</string>
+    <string name="setting_gesture_pwd_drawing_again">请再次绘制解锁密码</string>
+    <string name="setting_gesture_pwd_drawing_inconsistent">与上一次绘制不一致,请重新绘制</string>
+    <string name="setting_gesture_pwd_drawing_success">绘制成功</string>
+    <string name="setting_gesture_pwd_number">最少连接3个点,请重新输入</string>
+    <string name="setting_gesture_pwd_validate_error">密码错误</string>
+    <string name="setting_gesture_pwd_validate">请输入旧密码</string>
+    <string name="setting_gesture_pwd">请输入手势密码</string>
+
+    <string name="vote_text_1">1、投票结果采取少数服从多数的原则，赞成(或不赞成)投票比重超过募集总比重的50%即视为当次投票通过(或未通过)。</string>
+    <string name="vote_text_2">2.若投资人在投票截止时间内未参与投票,那么系统将默认判定其为投“赞成”票。</string>
+
+    <string name="ellipsis">\u2026</string>
+    <string name="str_no_network">网络连接失败</string>
+    <string name="str_no_service">服务器繁忙,请稍后再试</string>
+    <string name="str_no_service_toast">当前访问人数过多，请重试！</string>
+    <string name="str_no_data">暂无数据</string>
+    <string name="str_kfrx">400-158-1058</string>
+    <string name="str_gfwz">www.mimijinfu.com</string>
+    <string name="str_gfqq">194967135</string>
+    <string name="str_bqsy">深圳农金所金融服务有限公司</string>
+    <string name="str_address">深圳市福田区沙头街道深南大道6033号金运世纪大厦13楼13JK室</string>
+
+    <string name="str_wssmrzxx">请完善实名认证信息</string>
+    <string name="str_no_band_bankcard">未绑卡，请绑定银行卡后继续操作</string>
+    <string name="str_ktdsfzjtg">请开通第三方资金托管账户</string>
+
+
+    <string name="str_smxx">完善个人实名信息，保障账户资金安全</string>
+    <string name="str_bdtz">绑定投资银行卡，资金同卡进入少风险</string>
+    <string name="str_ktxlzftg">开通新浪支付托管。享受便捷投资服务</string>
+
+    <string name="str_fwrsgd">当前访问人数过多,</string>
+
+
+    <string name="str_p2p_color">#fb4a4a</string>
+    <string name="str_ye_color">#FFc655</string>
+    <string name="str_zc_color">#74b2ff</string>
+    <string name="str_dj_color">#e0dce0</string>
+
+</resources>

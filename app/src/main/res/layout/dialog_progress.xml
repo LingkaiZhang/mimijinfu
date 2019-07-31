@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/progress_dialog_bg"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="16.0dip">
+
+    <com.pnikosis.materialishprogress.ProgressWheel xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:wheel="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/progressSmall"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        wheel:matProg_barColor="@android:color/white"
+        wheel:matProg_barWidth="2dp"
+        wheel:matProg_circleRadius="20dp"
+        wheel:matProg_progressIndeterminate="true" />
+    <TextView
+        android:id="@+id/id_tv_loadingmsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="8.0dip"
+        android:textColor="#fff"
+        android:text="正在加载"
+        android:textSize="16.0dip" />
+
+</LinearLayout>

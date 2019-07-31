@@ -1,0 +1,352 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="50dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="25dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/ivStatus1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/img_bb" />
+
+                    <com.nongjinsuo.mimijinfu.widget.DividerView
+                        android:layout_width="1dp"
+                        android:layout_height="fill_parent"
+                        custom:dashGap="2dp"
+                        custom:dashLength="1dp"
+                        custom:dashThickness="1dp"
+                        custom:linecolor="@color/color_project_detail_jindu_xu_line"
+                        custom:orientation="vertical" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="18dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv1Xmsx"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="项目上线"
+                            android:textColor="@color/color_homepage_quanbu"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/tvXiangqing"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="9dp"
+                            android:background="@drawable/shape_project_details_xianshi_bg"
+                            android:paddingBottom="2dp"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:paddingTop="2dp"
+                            android:text="募集记录"
+                            android:textColor="@color/color_hot_sale_red"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tv1XmsxTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:text="2016-11-12 13:25:23"
+                        android:textColor="@color/color_homepage_quanbu"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="25dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/ivStatus2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/img_bb" />
+
+                    <com.nongjinsuo.mimijinfu.widget.DividerView
+                        android:layout_width="1dp"
+                        android:layout_height="fill_parent"
+                        custom:dashGap="2dp"
+                        custom:dashLength="1dp"
+                        custom:dashThickness="1dp"
+                        custom:linecolor="@color/color_project_detail_jindu_xu_line"
+                        custom:orientation="vertical" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="18dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv2Zcwc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="募集完成【待售】"
+                            android:textColor="@color/color_homepage_quanbu"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/tv2ZcwcTime"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:text="2016-11-12 13:25:23"
+                            android:textColor="@color/color_homepage_quanbu"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/iv2ZcwcLb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40dp"
+                        android:src="@drawable/img_lb"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="25dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/ivStatus3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/img_zrr" />
+
+                    <com.nongjinsuo.mimijinfu.widget.DividerView
+                        android:layout_width="1dp"
+                        android:layout_height="fill_parent"
+                        custom:dashGap="2dp"
+                        custom:dashLength="1dp"
+                        custom:dashThickness="1dp"
+                        custom:linecolor="@color/color_project_detail_jindu_xu_line"
+                        custom:orientation="vertical" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="18dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv3Xmtp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="项目投票"
+                        android:textColor="@color/color_homepage_quanbu"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv3XmtpTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:text="2016-11-12 13:25:23"
+                        android:textColor="@color/color_homepage_quanbu"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <com.nongjinsuo.mimijinfu.widget.MyListView
+                android:id="@+id/lvStatus3"
+                style="@style/layout_fill_wrap"
+                android:divider="@android:color/transparent"
+                android:listSelector="@android:color/transparent"></com.nongjinsuo.mimijinfu.widget.MyListView>
+
+            <RelativeLayout
+                android:id="@+id/rlZhanwei"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginLeft="25dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/img_bb"
+                    android:visibility="invisible" />
+
+                <com.nongjinsuo.mimijinfu.widget.DividerView
+                    android:layout_width="1dp"
+                    android:layout_height="fill_parent"
+                    android:layout_centerHorizontal="true"
+                    custom:dashGap="2dp"
+                    custom:dashLength="1dp"
+                    custom:dashThickness="1dp"
+                    custom:linecolor="@color/color_project_detail_jindu_xu_line"
+                    custom:orientation="vertical" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="80dp"
+                    android:layout_marginLeft="25dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/ivStatus4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/img_bb" />
+
+                    <com.nongjinsuo.mimijinfu.widget.DividerView
+                        android:layout_width="1dp"
+                        android:layout_height="fill_parent"
+                        custom:dashGap="2dp"
+                        custom:dashLength="1dp"
+                        custom:dashThickness="1dp"
+                        custom:linecolor="@color/color_project_detail_jindu_xu_line"
+                        custom:orientation="vertical" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="18dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv4Tptg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="投票通过【买方回款】"
+                        android:textColor="@color/color_homepage_quanbu"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv4TptgTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:text="2016-11-12 13:25:23"
+                        android:textColor="@color/color_homepage_quanbu"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/ivStatus5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:src="@drawable/img_bb" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="18dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv5Xmwc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="项目完成"
+                        android:textColor="@color/color_homepage_quanbu"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/tv5XmwcTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:text="2016-11-12 13:25:23"
+                        android:textColor="@color/color_homepage_quanbu"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <include
+        layout="@layout/include_service_fail"
+        android:visibility="gone" />
+
+    <include
+        layout="@layout/include_loading"
+        tools:visibility="gone" />
+</RelativeLayout>

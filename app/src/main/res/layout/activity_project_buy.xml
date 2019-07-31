@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/llRg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/login_left_text"
+                    android:text="可购金额" />
+
+                <TextView
+                    android:id="@+id/tvKgje"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="1"
+                    android:text="0元"
+                    android:textColor="@color/color_homepage_quanbu"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="20dp"
+                android:background="@color/color_class_room_pl_vertical_line" />
+
+
+            <LinearLayout
+                android:id="@+id/llPwdView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/login_left_text"
+                    android:text="认购金额" />
+
+                <com.nongjinsuo.mimijinfu.widget.MyEditText
+                    android:id="@+id/etRgje"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:hint="100元起投"
+                    android:maxLength="8"
+                    android:inputType="number"
+                    android:singleLine="true"
+                    android:textColorHint="@color/color_login_et_hint"
+                    android:textSize="14sp" />
+
+                <View
+                    android:layout_width="0.5dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/color_hot_sale_line" />
+
+                <TextView
+                    android:id="@+id/tvQt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="20dp"
+                    android:gravity="center_vertical"
+                    android:text="全投"
+                    android:textColor="@color/color_login_btn" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginLeft="20dp"
+                android:background="@color/color_class_room_pl_vertical_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingRight="18dp">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    style="@style/login_left_text"
+                    android:text="投资红包" />
+
+                <LinearLayout
+                    android:id="@+id/llKyhb"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:orientation="horizontal"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp">
+
+                    <TextView
+                        android:id="@+id/tvKyhb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableRight="@drawable/img_w_jt"
+                        android:gravity="right"
+                        android:text="0个红包可用"
+                        android:textColor="@color/color_zc_lookall"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:visibility="invisible"
+                android:id="@+id/llYqsy"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="预期收益:"
+                    android:textSize="12sp"
+                    android:textColor="@color/color_zc_lookall" />
+
+                <TextView
+                    android:id="@+id/tvYqsy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0元"
+                    android:layout_marginLeft="4dp"
+                    android:textSize="12sp"
+                    android:textColor="@color/color_login_btn" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvZhye"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="账户余额: 0元"
+                    android:textColor="@color/color_zc_lookall"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tvChongZhi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:background="@drawable/shape_project_details_xianshi_red_bg"
+                    android:paddingBottom="3dp"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:paddingTop="3dp"
+                    android:text="充值"
+                    android:textColor="@color/white"
+                    android:textSize="10sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="24dp"
+            android:lineSpacingMultiplier="1.4"
+            android:text="尊敬的投资人，为了保障您的资金安全，米米金服使用新浪支付第三方托管平台。充值后您的资金将存放至新浪支付平台。米米平台不直接操控您的资金，请放心投资。"
+            android:textColor="@color/color_homepage_quanbu"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tvQrgm"
+            style="@style/style_login_btn"
+            android:layout_marginTop="80dp"
+            android:text="确认认购" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="认购即同意"
+                android:textColor="@color/color_zc_lookall"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/tvFwht"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="《定投宝投资服务合同》"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <include
+        layout="@layout/include_service_fail"
+        android:visibility="gone" />
+</RelativeLayout>

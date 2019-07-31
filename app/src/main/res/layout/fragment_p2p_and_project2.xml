@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/ivStatusBar"
+            android:layout_width="fill_parent"
+            android:layout_height="15dp"
+            android:background="@color/white" />
+
+
+        <RelativeLayout
+            android:id="@+id/rlTitleBar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/titlebar_height"
+            android:background="@color/titlebar_color">
+
+            <TextView
+                android:id="@+id/title_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="项目"
+                android:textAllCaps="false"
+                android:textColor="@color/titlebar_text_color"
+                android:textSize="@dimen/titleba_title_fontsize" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/titlebar_line" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <cn.bingoogolapple.refreshlayout.BGARefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/swipeRefreshLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <com.nongjinsuo.mimijinfu.widget.PinnedHeaderExpandableListView
+            android:id="@+id/explistview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="#00000000"
+            android:choiceMode="singleChoice"
+            android:fastScrollEnabled="false"
+            android:footerDividersEnabled="true"
+            android:groupIndicator="@null"
+            android:divider="@android:color/transparent"
+            android:scrollbars="vertical"
+            android:scrollingCache="true" />
+        </cn.bingoogolapple.refreshlayout.BGARefreshLayout>
+        <include layout="@layout/include_loading" />
+
+        <include
+            layout="@layout/include_nodata"
+            android:visibility="gone" />
+    </RelativeLayout>
+</LinearLayout>

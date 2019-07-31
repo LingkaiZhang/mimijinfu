@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "C:\\AndroidCode\\mimijinfu\\library\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_template_custom_big.xml",
+        "source": "C:\\Users\\amjf\\.gradle\\caches\\transforms-2\\files-2.1\\6f07eec42211f484dcb94507c258d38b\\res\\layout-v21\\notification_template_custom_big.xml"
+    },
+    {
+        "merged": "C:\\AndroidCode\\mimijinfu\\library\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_action_tombstone.xml",
+        "source": "C:\\Users\\amjf\\.gradle\\caches\\transforms-2\\files-2.1\\6f07eec42211f484dcb94507c258d38b\\res\\layout-v21\\notification_action_tombstone.xml"
+    },
+    {
+        "merged": "C:\\AndroidCode\\mimijinfu\\library\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_action.xml",
+        "source": "C:\\Users\\amjf\\.gradle\\caches\\transforms-2\\files-2.1\\6f07eec42211f484dcb94507c258d38b\\res\\layout-v21\\notification_action.xml"
+    },
+    {
+        "merged": "C:\\AndroidCode\\mimijinfu\\library\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_template_icon_group.xml",
+        "source": "C:\\Users\\amjf\\.gradle\\caches\\transforms-2\\files-2.1\\6f07eec42211f484dcb94507c258d38b\\res\\layout-v21\\notification_template_icon_group.xml"
+    }
+]

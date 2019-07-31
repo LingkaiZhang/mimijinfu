@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <TextView
+            android:id="@+id/tvYqnh"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="期待年回报:0%"
+            android:textColor="@color/color_me_click_name"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tvQx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="期限:0个月"
+            android:textColor="@color/color_me_click_name"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="16dp"
+        android:background="@color/color_homepage_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="购买金额"
+            android:textColor="@color/color_me_click_name"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/etGmje"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:gravity="right|center"
+            android:inputType="number"
+            android:singleLine="true"
+            android:layout_marginLeft="16dp"
+            android:maxLength="8"
+            android:hint="100元起购，最多可购买0元"
+            android:textColor="@color/color_me_click_name"
+            android:textColorHint="@color/color_message_hui"
+            android:textSize="14sp" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="16dp"
+        android:background="@color/color_homepage_line" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="预计收益"
+            android:textColor="@color/color_me_click_name"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tvYqsy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0.0元"
+            android:textColor="@color/color_me_click_name"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvLjrg"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/color_project_detail_red_btn"
+        android:gravity="center"
+        android:text="立即投资"
+        android:textColor="@color/white" />
+</LinearLayout>

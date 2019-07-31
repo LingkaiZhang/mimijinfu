@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/ivNewsImage"
+            android:layout_width="105dp"
+            android:layout_height="75dp"
+            android:scaleType="centerCrop"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_marginLeft="13dp"
+            android:layout_marginTop="4dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvNewsTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="这组数据，是我坚持定投的原因"
+                android:maxLines="2"
+                android:minLines="2"
+                android:textColor="@color/color_homepage_quanbu"
+                android:textSize="15sp" />
+            <TextView
+                android:id="@+id/tvNewsContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="这组数据，是我坚持定投的原因"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:textColor="@color/color_8f8f8f"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:id="@+id/viewLine"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="16dp"
+        android:background="@color/color_homepage_line"/>
+</LinearLayout>

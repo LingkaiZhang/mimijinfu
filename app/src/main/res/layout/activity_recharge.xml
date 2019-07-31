@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/login_left_text"
+            android:text="账户余额" />
+
+        <TextView
+            android:id="@+id/tvZhye"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0元"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <View style="@style/style_setting_line"
+        android:layout_marginLeft="20dp"/>
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:text="充值金额"
+            style="@style/login_left_text" />
+
+        <com.nongjinsuo.mimijinfu.widget.MyEditText
+            android:id="@+id/etJe"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="最低充值金额为100元"
+            android:inputType="numberDecimal"
+            android:singleLine="true"
+            android:textColorHint="@color/color_login_et_hint"
+            android:textSize="14sp" />
+    </LinearLayout>
+    <View style="@style/style_setting_line"
+        android:visibility="gone"
+        android:layout_marginLeft="20dp"/>
+    <LinearLayout
+        android:visibility="gone"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:text="充值方式"
+            style="@style/login_left_text" />
+        <RadioGroup
+            android:id="@+id/rgCzType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/rbKjcz"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:checked="true"
+                android:background="@drawable/rb_chongzhi_type_selector"
+                android:textColor="@color/rb_chongzhi_selector"
+                android:text="快捷充值"/>
+            <RadioButton
+                android:id="@+id/rbWycz"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:background="@drawable/rb_chongzhi_type_selector"
+                android:textColor="@color/rb_chongzhi_selector"
+                android:text="网银充值"/>
+        </RadioGroup>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvXe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:drawableLeft="@drawable/img_wtt"
+        android:drawablePadding="4dp"
+        android:textSize="12sp"
+        android:textColor="@color/color_8f8f8f" />
+
+
+    <TextView
+        android:id="@+id/tvChongZhi"
+        android:layout_marginTop="80dp"
+        android:text="确认充值"
+        style="@style/style_login_btn" />
+</LinearLayout>

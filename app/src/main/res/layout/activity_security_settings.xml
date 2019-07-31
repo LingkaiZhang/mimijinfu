@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <LinearLayout style="@style/style_zc"
+            android:id="@+id/llBdsjh">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="绑定手机号"
+                android:textColor="@color/color_homepage_quanbu"
+                android:textSize="14sp" />
+            <TextView
+                android:id="@+id/tvPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:layout_marginRight="8dp"
+                android:textColor="@color/color_homepage_quanbu"
+                tools:text="18500395995"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/img_w_jt" />
+        </LinearLayout>
+
+        <View style="@style/style_setting_line" />
+
+        <LinearLayout style="@style/style_zc"
+            android:id="@+id/llSmrz">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="实名认证"
+                android:textColor="@color/color_homepage_quanbu"
+                android:textSize="14sp" />
+            <ImageView
+                android:id="@+id/ivSmrz"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:visibility="gone"
+                android:src="@drawable/img_rzcg"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/img_w_jt" />
+        </LinearLayout>
+
+        <View style="@style/style_setting_line" />
+
+        <LinearLayout style="@style/style_zc"
+            android:id="@+id/llYhk">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="银行卡"
+                android:textColor="@color/color_homepage_quanbu"
+                android:textSize="14sp" />
+            <ImageView
+                android:id="@+id/ivYhk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:visibility="gone"
+                android:src="@drawable/img_rzcg"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/img_w_jt" />
+        </LinearLayout>
+        <View style="@style/style_setting_line" />
+
+        <LinearLayout style="@style/style_zc"
+            android:id="@+id/llKqzjtg"
+           >
+            <TextView
+                android:id="@+id/tvKqzitg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="开启资金托管"
+                android:textColor="@color/color_homepage_quanbu"
+                android:textSize="14sp" />
+            <ImageView
+                android:id="@+id/ivZjtg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_marginRight="8dp"
+                android:src="@drawable/img_rzcg"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/img_w_jt" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

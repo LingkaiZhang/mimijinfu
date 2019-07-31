@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#fb4a4a</color>
+
+    <color name="background_color">#EFEFF5</color>
+    <color name="titlebar_color">#FFFFFF</color>
+    <color name="titlebar_text_color">#161616</color>
+    <color name="titlebar_line">#e5e5e5</color>
+
+    <color name="dialog_title_color">#0E0E0E</color>
+    <color name="dialog_message_color">#939191</color>
+    <color name="dialog_line">#d2d2d2</color>
+    <color name="dialog_ljgx">#fb4a4a</color>
+    <color name="rb_tc_true">#434343</color>
+    <color name="rb_tc_false">#bfbfbf</color>
+    <color name="color_hot_sale_red">#fb4a4a</color>
+    <color name="color_hot_sale_green">#28d7b8</color>
+    <color name="color_hot_sale_gray">#A2A2A2</color>
+    <color name="color_hot_sale_line">#e5e5e5</color>
+
+    <color name="color_ranking_line">#dcdcdc</color>
+
+    <color name="color_class_room_pl_vertical_line">#E5E5E5</color>
+    <color name="color_class_room_more">#fb4a4a</color>
+
+    <color name="color_dialog_tcolor">#4D4D4D</color>
+    <color name="color_share_dialog_textcolor">#4f4f4f</color>
+    <color name="color_me_name">#fffefe</color>
+    <color name="color_me_click_name">#2D2D2D</color>
+    <color name="color_login_btn">#fb4a4a</color>
+    <color name="color_yuyin">#575757</color>
+    <color name="color_login_et_hint">#CDCDCD</color>
+    <color name="color_login_name">#181818</color>
+    <color name="color_login_wenti">#424242</color>
+    <color name="color_message_hui">#929292</color>
+    <color name="color_about">#515151</color>
+    <color name="color_about_bottom">#6F6f6f</color>
+    <color name="color_about_bottom1">#A5A5A5</color>
+    <color name="color_fxpc_text1">#9A9999</color>
+    <color name="white">#ffffff</color>
+
+    <color name="color_message">#161616</color>
+    <color name="color_homepage_line">#E5E5E5</color>
+    <color name="color_homepage_quanbu">#2D2D2D</color>
+    <color name="color_item_progect_name">#161616</color>
+    <color name="color_project_detail_baozhang">#929292</color>
+    <color name="color_project_detail_red_btn">#fb4a4a</color>
+    <color name="color_project_detail_status_hui">#B9B9B9</color>
+    <color name="color_project_detail_jindu_hui">#a2a2a2</color>
+    <color name="color_project_detail_jindu_xu_line">#cdcdcd</color>
+    <color name="color_project_detail_shaixuan_bg">#79000000</color>
+    <color name="version5.0_status_color">#aea6a6</color>
+    <color name="color_me_zzc">#FFB5B5</color>
+    <color name="color_zc_lookall">#646464</color>
+
+    <color name="color_item_hot_sale_detail_btn_bg">#00C0FF</color>
+    <color name="color_item_hot_sale_detail_btn_hui_bg">#d2d2d2</color>
+    <color name="color_set_pwd">#737373</color>
+    <color name="color_anquan">#696969</color>
+    <color name="color_vote_hint_color">#A3A2A2</color>
+
+    <color name="color_vote_red_translucence">#ffd6d6</color>
+    <color name="color_vote_blue_translucence">#daecff</color>
+    <color name="color_vote_blue">#47A2FF</color>
+    <!-- 设置 手势密码 环形解锁颜色 -->
+    <color name="setting_gesture_pwd_ring_not_selected">#E4E4E4</color>
+    <color name="setting_gesture_pwd_ring_selected">#fb4a4a</color>
+    <color name="setting_gesture_pwd_ring_internal_selected">#fb4a4a</color>
+    <color name="setting_wjssmm">#9f9f9f</color>
+
+    <color name="bottom_bar_icon_gray">#666666</color>
+    <color name="color_home_page_xbyg_title_bg">#75000000</color>
+    
+    <color name="color_zjmx_ztje">#fb4a4a</color>
+    <color name="color_zjmx_djje">#2e2b39</color>
+    <color name="color_zjmx_kyje">#FFc655</color>
+    <color name="color_green">#35be2a</color>
+
+    <color name="color_funding_record">#f7f7f7</color>
+
+    <color name="color_progressbar_bg">#e5e5e5</color>
+    <color name="color_progressbar_gradient_start">#FF7937</color>
+    <color name="color_progressbar_gradient_end">#fb4a4a</color>
+    <color name="color_yelx">#2d2d2d</color>
+    <color name="color_zrsy">#fb4a4a</color>
+    <color name="color_jindubili">#BEBEBE</color>
+
+    <color name="color_jd_content_text">#a3feb2aa</color>
+    <color name="color_jd_time">#9D9D9D</color>
+    <color name="color_splash_textcolor">#7fffffff</color>
+    <color name="color_212121">#212121</color>
+    <color name="color_6b6b6b">#6b6b6b</color>
+    <color name="color_a7a7a7">#a7a7a7</color>
+    <color name="color_f9f9f9">#f9f9f9</color>
+    <color name="color_ffd5d0">#ffd5d0</color>
+    <color name="color_4f1418">#4f1418</color>
+    <color name="color_ff3947">#fb4a4a</color>
+    <color name="color_8f8f8f">#8f8f8f</color>
+    <color name="color_feeb6a">#feeb6a</color>
+    <color name="color_9c9c9c">#9c9c9c</color>
+    <color name="color_fdb7b7">#fdb7b7</color>
+    <color name="color_e8e8e8">#e8e8e8</color>
+    <color name="color_f8fafd">#f8fafd</color>
+    <color name="color_74b2ff">#74b2ff</color>
+    <color name="color_e0dce0">#e0dce0</color>
+    <color name="color_f3f3f3">#f3f3f3</color>
+    <color name="color_F4F4F4">#F4F4F4</color>
+    <color name="color_e2e2e2">#e2e2e2</color>
+    <color name="color_d1d1d1">#d1d1d1</color>
+</resources>

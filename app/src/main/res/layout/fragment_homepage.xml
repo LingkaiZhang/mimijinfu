@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/ivStatusBarTop"
+            android:layout_width="fill_parent"
+            android:layout_height="15dp"
+            android:background="@android:color/transparent"
+            android:visibility="gone" />
+
+        <cn.bingoogolapple.refreshlayout.BGARefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/swipeRefreshLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.nongjinsuo.mimijinfu.widget.ObservableScrollView
+                android:id="@+id/scroll"
+                android:scrollbars="none"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <include layout="@layout/headerview_homepage" />
+
+                    <com.nongjinsuo.mimijinfu.widget.MyListView
+                        android:id="@+id/listView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:dividerHeight="0dp"
+                        android:divider="@android:color/transparent"></com.nongjinsuo.mimijinfu.widget.MyListView>
+                    <include layout="@layout/footview_hotsale"/>
+                </LinearLayout>
+            </com.nongjinsuo.mimijinfu.widget.ObservableScrollView>
+        </cn.bingoogolapple.refreshlayout.BGARefreshLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:id="@+id/ivStatusBar"
+            android:layout_width="fill_parent"
+            android:layout_height="15dp"
+            android:background="@android:color/transparent" />
+
+        <RelativeLayout
+            android:id="@+id/rlTitleBar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/titlebar_height"
+            android:background="@android:color/transparent">
+
+            <TextView
+                android:id="@+id/title_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="@string/app_name"
+                android:textAllCaps="false"
+                android:textColor="@android:color/transparent"
+                android:textSize="@dimen/titleba_title_fontsize" />
+
+            <RelativeLayout
+                android:id="@+id/RlMessage"
+                android:layout_width="@dimen/titlebar_height"
+                android:layout_height="@dimen/titlebar_height"
+                android:layout_alignParentRight="true">
+
+                <ImageView
+                    android:id="@+id/ivMessagePic"
+                    android:layout_width="wrap_content"
+                    android:padding="1.5dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/img_xxb" />
+
+                <ImageView
+                    android:id="@+id/ivMessageDian"
+                    android:layout_alignRight="@+id/ivMessagePic"
+                    android:layout_alignTop="@+id/ivMessagePic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:src="@drawable/shape_message_dian" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <include
+        layout="@layout/include_loading"
+        tools:visibility="gone" />
+
+    <include
+        layout="@layout/include_nodata"
+        android:visibility="gone" />
+</RelativeLayout>
